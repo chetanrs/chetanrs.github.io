@@ -1,3 +1,86 @@
-img {
-  height: 300px;
+/* ROOT VARIABLES */
+
+:root {
+  --test-color: rgb(255, 255, 255);
+  --primary-color: #3464eb;
+}
+
+/*  MAIN */
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.split {
+  width: 50vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/*  LEFT SIDE */
+
+.left {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#headshot {
+  transform: scale(0.5);
+  filter: grayscale(100%);
+  border-radius: 50%;
+  border: 5px solid black;
+}
+/*  RIGHT SIDE */
+
+.right {
+  width: 50%;
+  background-color: white;
+  position: relative;
+  left: 50%;
+  overflow: auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: min-content;
+  margin-top: 5vh;
+}
+
+.section-name {
+  width: 25%;
+  background-color: var(--test-color); /* FOR TESTING */
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+  font-family: "Oswald", sans-serif;
+}
+
+.fa-chevron-right {
+  display: inline-block;
+  width: 5%;
+  height: 1%;
+  background-color: var(--test-color); /* FOR TESTING */
+}
+
+.section-content {
+  width: 50%;
+  background-color: var(--test-color); /* FOR TESTING */
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  margin: 0;
 }
