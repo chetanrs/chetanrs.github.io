@@ -81,9 +81,13 @@ p {
   margin: 0;
 }
 
-.about-lists {
-  display: flex;
-  flex-direction: row;
+ul {
+  list-style-type: none;
+}
+
+.fas {
+  margin-right: 0.4rem;
+  color: var(--primary-color);
 }
 
 /* RESPONSIVE */
@@ -100,6 +104,11 @@ p {
 
   .left {
     position: relative;
+    height: 50vh;
+  }
+
+  #headshot {
+    transform: scale(0.3);
   }
 
   .right {
